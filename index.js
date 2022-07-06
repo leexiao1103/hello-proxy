@@ -17,6 +17,7 @@ const PORT = process.env.PORT || 1080;
 
 // start listening!
 server.listen(PORT);
+console.log("start at:", PORT);
 
 server.on("handshake", function () {
 	console.log();
