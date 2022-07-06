@@ -13,8 +13,10 @@ const server = socks5.createServer({
 	},
 });
 
+const PORT = process.env.PORT || 1080;
+
 // start listening!
-server.listen(1080);
+server.listen(PORT);
 
 server.on("handshake", function () {
 	console.log();
