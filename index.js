@@ -175,3 +175,5 @@ let domainVerify = function (host) {
 socket
 	.listen(1080, () => console.log("socks5 proxy running ..."))
 	.on("error", (err) => console.error(err));
+
+console.log("test");
